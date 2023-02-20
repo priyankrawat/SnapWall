@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const postSchema = mongoose.Schema({
-    title: String,
+    title: String, //can change this to varchar
     message: String,
     name: String,
     creator: String,
