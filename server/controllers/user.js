@@ -9,7 +9,7 @@ export const signin = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const oldUser = await UserModal.findOne({ email });
+    const oldUser = await UserModal.findOne({ email }); //working stats
 
     if (!oldUser) return res.status(404).json({ message: "User doesn't exist" });
 
