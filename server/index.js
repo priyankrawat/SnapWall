@@ -6,7 +6,7 @@ import cors from 'cors';
  
 import postRoutes from './routes/posts.js';
 import userRouter from "./routes/user.js"; 
-
+ 
 const app = express();
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
